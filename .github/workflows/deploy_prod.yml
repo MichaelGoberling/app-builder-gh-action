@@ -37,7 +37,6 @@ jobs:
           TECHNICALACCOUNTID: ${{ secrets.TECHNICALACCID_PROD }}
           TECHNICALACCOUNTEMAIL: ${{ secrets.TECHNICALACCOUNTEMAIL_PROD }}
           IMSORGID: ${{ secrets.IMSORGID_PROD }}
-          SCOPES: ${{ secrets.SCOPES_PROD }}
       - name: Build
         env:
           AIO_RUNTIME_NAMESPACE: ${{ secrets.AIO_RUNTIME_NAMESPACE_PROD }}
