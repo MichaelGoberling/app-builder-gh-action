@@ -1,3 +1,17 @@
-extensions:
-  dx/excshell/1:
-    $include: src/dx-excshell-1/ext.config.yaml
+application:
+  actions: actions
+  web: web-src
+  runtimeManifest:
+    packages:
+      app-builder-gh-action:
+        license: Apache-2.0
+        actions:
+          generic:
+            function: actions/generic/index.js
+            web: 'yes'
+            runtime: nodejs:18
+            inputs:
+              LOG_LEVEL: debug
+            annotations:
+              require-adobe-auth: true
+              final: true

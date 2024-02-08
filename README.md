@@ -1,6 +1,6 @@
-# app-builder-gh-action
+# mgtestutils
 
-Test 2 2
+Welcome to my Adobe I/O Application!
 
 ## Setup
 
