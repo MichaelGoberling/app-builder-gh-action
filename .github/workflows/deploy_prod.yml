@@ -54,7 +54,7 @@ jobs:
           AIO_PROJECT_ORG_ID: ${{ secrets.AIO_PROJECT_ORG_ID_PROD }}
           AIO_PROJECT_WORKSPACE_ID: ${{ secrets.AIO_PROJECT_WORKSPACE_ID_PROD }}
           AIO_PROJECT_WORKSPACE_NAME: ${{ secrets.AIO_PROJECT_WORKSPACE_NAME_PROD }}
-          AIO_PROJECT_WORKSPACE_DETAILS_SERVICES: ${{ secrets.AIO_PROJECT_WORKSPACE_DETAILS_SERVICES_PROD }}
+          AIO_PROJECT_WORKSPACE_DETAILS_SERVICES: '[{"code":"AdobeIOManagementAPISDK","name":"I/O Management API"}]'
         uses: adobe/aio-apps-action@3.3.1
         with:
           os: ${{ matrix.os }}
