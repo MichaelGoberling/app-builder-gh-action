@@ -15,18 +15,3 @@ application:
             annotations:
               require-adobe-auth: true
               final: true
-  events:
-    registrations:
-      Registration 1:
-        description: Registration for IO Events
-        events_of_interest:
-          - provider_metadata: dx_marketo_audit_user
-            event_codes:
-              - com.adobe.platform.marketo.audit.user.role
-              - com.adobe.platform.marketo.audit.user.smartlist
-              - com.adobe.platform.marketo.audit.user.emailbatchprogram
-          - provider_metadata: gcs_smart
-            event_codes:
-              - PROJECT_UPDATE
-              - UPDATE_TM
-        runtime_action: events-app/test-action-1
